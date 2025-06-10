@@ -8,10 +8,9 @@ from datetime import date as dt
 from datetime import timedelta
 
 site_link = "https://www.fairvalue.co.il"
-upper_logo_url = "W:\\QF\\Dima\\site\\logo.jpg"
-bottom_logo_url = "W:\\QF\\Dima\\site\\fv2.jpg"
+upper_logo_url = "logo.jpg"
+bottom_logo_url = "fv2.jpg"
 
-# st.image(upper_logo_url, width=200)  # Adjust width as needed
 with open(upper_logo_url, "rb") as f:
     img_bytes = f.read()
     encoded = base64.b64encode(img_bytes).decode()
